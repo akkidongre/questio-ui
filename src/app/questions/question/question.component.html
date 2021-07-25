@@ -1,0 +1,13 @@
+<mat-card (click) = "onQuestionClick()">
+    <mat-card-header>
+        <mat-card-title>
+            {{question.question_text}}?
+        </mat-card-title>
+        <mat-card-subtitle class="mt-2">
+            <span class="dark-grey">Id: </span>
+            <span class="dark-grey bold">{{question.id}}</span>
+            <span class="ms-4 dark-grey">Accuracy: </span>
+            <span class="dark-grey bold">{{question.stats.percent_of_users_answered_correctly}}%</span>
+        </mat-card-subtitle>
+    </mat-card-header>
+</mat-card>

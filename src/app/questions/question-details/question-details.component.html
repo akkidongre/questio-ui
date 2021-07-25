@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+            <h2 class="bold">{{question.question_text}}?</h2>
+            <p class="grey">
+                Id: <span class="dark-grey bold">{{question.id}}</span>
+                <span class="ms-4">Author: </span><span class="dark-grey bold">{{question.author}}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+            <h4 class="bold">Options</h4>
+            <mat-list role="list">
+                <mat-list-item role="listitem" *ngFor="let option of question.answer_options">
+                    <span>{{option}}</span>
+                    <mat-icon *ngIf="option === question.correct_answer" color="primary" class="ms-4" matTooltip="Correct answer">
+                        check_circle
+                    </mat-icon>
+                </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
+
+    <div class="row mt-4 stats-row">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+            <div>
+                <span class="grey">Last asked on: </span>
+                <span class="dark-grey bold">{{question.stats.last_asked_date | date}}</span>
+            </div>
+            <div>
+                <span class="grey">Number of times asked: </span>
+                <span class="dark-grey bold">{{question.stats.asked_count}} times</span>
+            </div>
+            <div>
+                <span class="grey">Percentage of users who answered correctly: </span>
+                <span class="dark-grey bold">{{question.stats.percent_of_users_answered_correctly}}%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+            <button mat-raised-button color="primary" (click)="goBack()">Go Back</button>
+        </div>
+    </div>
+</div>

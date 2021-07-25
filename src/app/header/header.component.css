@@ -1,0 +1,23 @@
+mat-toolbar {
+    background: #fefefe;
+    height: 64px;
+}
+
+.brand-title {
+    color: #0508d4;
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+
+.brand-logo {
+    font-size: 1.25rem;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+button:hover {
+    background-color: #FF9100;
+    color: black;
+}

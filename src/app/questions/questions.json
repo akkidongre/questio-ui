@@ -1,0 +1,50 @@
+{
+    "questions": [{
+        "id": 1,
+        "question_text": "Who is the president of India",
+        "answer_options": ["Pratibha Patil", "Dr. APJ Abdul Kalam", "Ramnath Kovind", "Manmohan Singh"],
+        "correct_answer": "Ramnath Kovind",
+        "author": "Akshay",
+        "stats": {
+            "last_asked_date": "2019-10-15T11:29:36.349Z",
+            "asked_count": 10,
+            "percent_of_users_answered_correctly": 76
+        }
+    },
+    {
+        "id": 2,
+        "question_text": "Who is the prime minister of India",
+        "answer_options": ["Rahul Gandhi", "Sharad Pawar", "Narendra Modi", "Manmohan Singh"],
+        "correct_answer": "Narendra Modi",
+        "author": "Next Eductation",
+        "stats": {
+            "last_asked_date": "2020-07-02T11:29:36.349Z",
+            "asked_count": 13,
+            "percent_of_users_answered_correctly": 95
+        }
+    },
+    {
+        "id": 3,
+        "question_text": "Which is the capital city of India",
+        "answer_options": ["Bengaluru", "New Delhi", "Mumbai"],
+        "correct_answer": "New Delhi",
+        "author": "Akshay",
+        "stats": {
+            "last_asked_date": "2021-05-05T11:29:36.349Z",
+            "asked_count": 8,
+            "percent_of_users_answered_correctly": 98
+        }
+    },
+    {
+        "id": 4,
+        "question_text": "Which is the capital city of Karnataka",
+        "answer_options": ["Bengaluru", "New Delhi", "Mumbai"],
+        "correct_answer": "Bengaluru",
+        "author": "Akshay",
+        "stats": {
+            "last_asked_date": "2021-07-25T11:29:36.349Z",
+            "asked_count": 8,
+            "percent_of_users_answered_correctly": 62
+        }
+    }]
+}

@@ -1,0 +1,39 @@
+mat-card {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%) !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    width: 0%;
+    pointer-events: none;
+    transform: none;
+    height: 0px;
+    background-color: #fefefe;
+}
+
+::ng-deep.mat-form-field-appearance-standard .mat-form-field-flex {
+    padding-top: 0;
+}
+
+::ng-deep.mat-form-field-wrapper {
+    padding-bottom: 0.8rem;
+    padding-top: 0.1rem;
+}
+
+::ng-deep mat-form-field input {
+    height: 1rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
+    color: gray;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+}

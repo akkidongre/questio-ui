@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-8 offset-lg-2 col-md-12">
+            <app-search></app-search>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-3 mb-4" *ngFor="let question of filteredQuestionsList; let i = index">
+            <app-question [question]="question" (questionClick)="handleQuestionClick($event)"></app-question>
+        </div>
+        <div class="col-12 text-center" *ngIf="filteredQuestionsList.length === 0">
+            <p class="grey">-- No questions to show --</p>
+        </div>
+    </div>
+</div>
